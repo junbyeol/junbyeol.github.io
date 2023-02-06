@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-bee",
+  "name": "junbyeol.github.io",
   "private": true,
-  "description": "Gatsby blog starter template",
+  "description": "junbyeol's tech blog",
   "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "author": "Junsung Yoon <yoonjs0510@kaist.ac.kr>",
   "bugs": {
-    "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
+    "url": "https://github.com/junbyeol/junbyeol.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
@@ -87,6 +87,6 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "deploy": "yarn build & gh-pages -d public -b published"
+    "deploy": "yarn build && gh-pages -d public -b published"
   }
 }
