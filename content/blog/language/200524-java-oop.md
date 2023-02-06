@@ -16,7 +16,7 @@ draft: false
 # OOP(Object-Oriented Programming)
 
 > 역할, 책임, 협력  -오브젝트
->
+
 - Encapsulation, Inheritance, Polymorpism
 
   → 이 모든 것을 포함한 개념 = Class
