@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Junbyeol Blog]]></title><description><![CDATA[소프트웨어 엔지니어 윤준성의 기술블로그]]></description><link>https://junbyeol.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Feb 2023 05:53:25 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[200524 JPA Tags: Java, Server Layered Architecture Presentation layer : View Control layer: Controller Business layer: Service Persistence…]]></description><link>https://junbyeol.github.io/spring/200130-JPA/</link><guid isPermaLink="false">https://junbyeol.github.io/spring/200130-JPA/</guid><content:encoded>&lt;h1 id=&quot;200524-jpa&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#200524-jpa&quot; aria-label=&quot;200524 jpa permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;200524 JPA&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Junbyeol Blog]]></title><description><![CDATA[소프트웨어 엔지니어 윤준성의 기술블로그]]></description><link>https://junbyeol.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 10 Feb 2023 08:40:15 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[200524 JPA Tags: Java, Server Layered Architecture Presentation layer : View Control layer: Controller Business layer: Service Persistence…]]></description><link>https://junbyeol.github.io/spring/200130-JPA/</link><guid isPermaLink="false">https://junbyeol.github.io/spring/200130-JPA/</guid><content:encoded>&lt;h1 id=&quot;200524-jpa&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#200524-jpa&quot; aria-label=&quot;200524 jpa permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;200524 JPA&lt;/h1&gt;
 &lt;p&gt;Tags: Java, Server&lt;/p&gt;
 &lt;h1 id=&quot;layered-architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#layered-architecture&quot; aria-label=&quot;layered architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Layered Architecture&lt;/h1&gt;
 &lt;ol&gt;
@@ -207,7 +207,160 @@
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[200524 Spring Framework Tags: Java, Server :Java EE 개발을 위한 오픈소스 애플리케이션 프레임워크 cheese10yun/spring-guide 특징 경량 컨테이너로 자바 객체를 직접 관리 POJO…]]></description><link>https://junbyeol.github.io/spring/200310-Spring-Framework/</link><guid isPermaLink="false">https://junbyeol.github.io/spring/200310-Spring-Framework/</guid><content:encoded>&lt;h1 id=&quot;200524-spring-framework&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#200524-spring-framework&quot; aria-label=&quot;200524 spring framework permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;200524 Spring Framework&lt;/h1&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[200525 TLS/SSL Tags: Network…]]></description><link>https://junbyeol.github.io/network/200525 TLS SSL 376350998350494eb1b0c6e2fca91508/</link><guid isPermaLink="false">https://junbyeol.github.io/network/200525 TLS SSL 376350998350494eb1b0c6e2fca91508/</guid><content:encoded>&lt;h1 id=&quot;200525-tlsssl&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#200525-tlsssl&quot; aria-label=&quot;200525 tlsssl permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;200525 TLS/SSL&lt;/h1&gt;
+&lt;p&gt;Tags: Network&lt;/p&gt;
+&lt;h1 id=&quot;암호화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%95%94%ED%98%B8%ED%99%94&quot; aria-label=&quot;암호화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;암호화&lt;/h1&gt;
+&lt;h2 id=&quot;대칭키-암호&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8C%80%EC%B9%AD%ED%82%A4-%EC%95%94%ED%98%B8&quot; aria-label=&quot;대칭키 암호 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;대칭키 암호&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;암호화키와 복호화키가 동일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;공개키-암호비대칭키-암호&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%9C%ED%82%A4-%EC%95%94%ED%98%B8%EB%B9%84%EB%8C%80%EC%B9%AD%ED%82%A4-%EC%95%94%ED%98%B8&quot; aria-label=&quot;공개키 암호비대칭키 암호 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공개키 암호(비대칭키 암호)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;암호화키와 복호화키가 따로 있음&lt;/li&gt;
+&lt;li&gt;외부에 공개되는 키가 암호화/복호화 용인지에 따라&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;공개-키-암호&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%9C-%ED%82%A4-%EC%95%94%ED%98%B8&quot; aria-label=&quot;공개 키 암호 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공개 키 암호&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;공개키로 암호화, 비밀키로 복호화&lt;/li&gt;
+&lt;li&gt;비밀키를 갖고있는 사용자만 해독 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;→ 아무나 우체통에 편지를 넣을 수 있지만, 꺼내는 사람은 키를 가진 사람 한 명 뿐!&lt;/p&gt;
+&lt;h3 id=&quot;공개-키-서명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%9C-%ED%82%A4-%EC%84%9C%EB%AA%85&quot; aria-label=&quot;공개 키 서명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공개 키 서명&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;비밀키로 암호화, 공개키로 복호화&lt;/li&gt;
+&lt;li&gt;비밀키를 갖고있는 사용자만 암호화 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;→ 인장으로 편지봉투를 봉하면 누구나 열어볼수 있지만, 발신자가 무조건 본인임을 증명 가능&lt;/p&gt;
+&lt;h2 id=&quot;참고-해시&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0-%ED%95%B4%EC%8B%9C&quot; aria-label=&quot;참고 해시 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고) 해시&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터를 특정길이의 다른 데이터로 전환하는 것!&lt;/li&gt;
+&lt;li&gt;복호화할 수 없으므로 엄밀하게 암호화는 아니다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;tlsssl&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tlsssl&quot; aria-label=&quot;tlsssl permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TLS/SSL&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 560px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACxklEQVQ4y22TC08aQRSF+cdN6gs11WotasHWBwsLCAhCRKGKtuCCBHl0QXk/bEWrlmJitEYTE2BB0NOZQYxJu8mXu3N25+y9c+/KHh8f8b+r3W7B5smDc+Wg28iDX88R8gy6foasOWcGWlcWB6VfkNHNl5eXODw8RLlcZjw8PKDRaGBpfQcOIQy904/1QBQ6pw9OXxhmdxAGVwAuf4hofnhjGQjxDIKRWMeQGpydnaFYLKJWq7EMJakJYTeAg6MEiT4cnabgDQrIFKKIJiLwBH0o/hCxvetH6TSH0995REVi2G63Qbm/v2dZUXO6luo1TJji6OfTGNAmMKRPkZjEsCGDIYJcl8IbYxb9ROvT7EPOJxCK5yFrtVrMqGtYrVaZaa1WxTg1NKQxbCIGi2n068hmfo8hX0yhV7vP4qAxDTl5L7RX7JTcvaghLb1UKuHk5wkmrR6otgSo3F5MuzwYtbgx5drCiNkOxaob43Yv5oUQ5rYDUG2KCESykFUqFZyfn+Pi4gJXV1fsDOtSnZRch8ISxshyBGO2CEatYfSovZDrtzGoF0ipX9HLCXi3IhK+kedx7MYKkNESKZIk4ebmBnd3d4zrP9eYskcxvZkmWVIyUJL7CUcU71dFfHCnMPMl8xzH7MRQzP9bMjWnGVfKFXxyhWHcK8AUy8NEDnxRzGJma4ehCyeJViBaDpZkEUp3rFMybUCz2QRtDr2nkUK7/NYg4tVCHL2aOHq4DgO02/pOQ14/aTT2kXW42xQ62LQZdKhvb29ZtnWpASX/GWreAk5vIyxDrbNiekYDhVKNee0SOIONaMvQGqyYVK8hSM+QbqYZ0qE+Pj5mM8jKb7YwpVkDx5ug0VsIxEBnhmpWA+UnjnzI9KQtgTeYoVhwYCdKzrD7L9M5pKW+/JeNG0l8tO9j3pHE3EqCsbCaYsy90Gaf9Nz3E/wFG9tZGiCeU7AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled.png&quot;
+        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled.png&quot;
+        src=&quot;/static/7a79541254f7de53ea2b8da28ff72ebd/b06ae/Untitled.png&quot;
+        srcset=&quot;/static/7a79541254f7de53ea2b8da28ff72ebd/5a46d/Untitled.png 300w,
+/static/7a79541254f7de53ea2b8da28ff72ebd/b06ae/Untitled.png 560w&quot;
+        sizes=&quot;(max-width: 560px) 100vw, 560px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TCP/IP 계층에서 Application Layer에 속함&lt;/li&gt;
+&lt;li&gt;TLS 1.0 == SSL 3.0, 같은 말이라는 뜻&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;악수(HandShake) ⇒ 전송(Session) ⇒ 통신종료&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;이중 HandShake가 너무너무너무너무 중요함&lt;/p&gt;
+&lt;h2 id=&quot;ssl-handshake&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ssl-handshake&quot; aria-label=&quot;ssl handshake permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSL Handshake&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터 전송(Session) 때 사용할 대칭 키를 서로 안전하게 확보하는 것이 목표!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;사진출처) 내가 만듦&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABfklEQVQoz51S226CQBTk/3/G9Bd8kapt4oNpmoCArIDITS6CIEx3UGyCJE16yGTZ25w5s0cJggCqqvZYLpeYz+fYbrfYbDZYr9dYrVbwfR+32w3X6xV1Xb+gbVswuq6DUlUVPM+DaZqwLAuGYUDTtB5c03UdYRgiSRLEcTwJkg6hOI6D2ewNeZ7jvyGEgOu6yLIMCrMvFou+JJKez2fkcmMIlvFXUBTvkkNh/ZTMieu5sB0B4R6QFwWK4oLLReIxUkGaZn1SguWWZSnPFc/EStM0yOQhLmiWjvX2E1/GN0zpJz2ll7vdrveSPlLJ8Bh8JApK07QX9Ev4KDGULy5sgZN/6j3Z7/eS2IRt27CFDXYEX3xswwshs/IQFzv5MSvn44tde19jZ9A3JrqrLsaEhZRfS0+Spz/n5D5GcYSD70BIOL6LKIyk0hBH79i3G/3Lsny65KkoqxLqxzsMYeJwdBCc7mUT7BAS8f6TkOWRdGiRMbifSwVNPX2GwfvD/w86M0yjvEiFdgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%201.png&quot;
+        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%201.png&quot;
+        src=&quot;/static/1651999551a13a2d36e2a87dcde508e1/c1b63/Untitled%201.png&quot;
+        srcset=&quot;/static/1651999551a13a2d36e2a87dcde508e1/5a46d/Untitled%201.png 300w,
+/static/1651999551a13a2d36e2a87dcde508e1/0a47e/Untitled%201.png 600w,
+/static/1651999551a13a2d36e2a87dcde508e1/c1b63/Untitled%201.png 1200w,
+/static/1651999551a13a2d36e2a87dcde508e1/fde66/Untitled%201.png 1574w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABiUlEQVQoz5VSa2vCQBD0//8i+8lCoWBLi4qirajVJBrzfl2SS0ymtxuTKrZCD4bsHbuzs7PpaZqGxWKB8XiMyWSC0WiE6XSK5XLJ9/l8jtlsht1uB13XQfkt2vt2u2VQTg/qOI6D4XB4BSJuYyJP0/RXZFmGy8OEpmkyTqcTqqpi5HnexWVZcuFf8H2fyameCQeDR/T7D1xc1zX+cyh/vV7zlEVRNIQ/impIKRl0J8icYtm9U5EQAofDHntDQyoSxElyPXIhCyTqUYgUURRxQUvY+kRvIhGcF0YxDpaH8acBO0gUqeimawjPXXkEBU958qEWsVKjmJbFm7Rtm8eihp7n42BaWO4spLJSTeLOqhtCMtb92mD1+oLV+xu05yfomw3y87i0IPoS6qrkmii6Q8gJQQBfqfFdF+7xqBS5qO4s64awLIvGB6VOypzReJgpZeflKIWk/qga6JrOP7FhGOxvHF8QyrJCJkskqYQXJnC8EK4fXcP12D9XKQ7DsEEQIlCTUCOyoSX8Bh/XSdk+1Rn+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%202.png&quot;
+        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%202.png&quot;
+        src=&quot;/static/dc216d05f4b7eef730cd5a13f2225a49/c1b63/Untitled%202.png&quot;
+        srcset=&quot;/static/dc216d05f4b7eef730cd5a13f2225a49/5a46d/Untitled%202.png 300w,
+/static/dc216d05f4b7eef730cd5a13f2225a49/0a47e/Untitled%202.png 600w,
+/static/dc216d05f4b7eef730cd5a13f2225a49/c1b63/Untitled%202.png 1200w,
+/static/dc216d05f4b7eef730cd5a13f2225a49/6568d/Untitled%202.png 1660w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABlUlEQVQoz4VSa2+CQBD0//+t9gNqrZGmsamNTeXlIeBxHAgITnfX2mircckGuMfszuwMQKG1RhAEkp7nQa3X2G638r/ZbJCmKQ6HA24F751ywAtKKUynU4xGI4zHY4woXdfF5OkJk8kE8/kcWZZJ4Wt5XkwAF4sPSY48z5GEHhIqEsexdFiWJbquQ9u2V5PPWGvR9/0RcOgM8fDwiKZphF6kPMQqks6jKJI1BrwVq9UKSZJgt9sdAau6wSIqEG8STJ+f4b68wn37hOM4Qtn3fTl80utcN46isJeUy7KCsRU6anm5XIpmDOoMHcxmM4RhKKApdcHB1C4Bi18GAsjVW6Jbdw10Y5DXBpnJUOxLmNZiHSt4foCQNGVQHtBdwLquj1R+ntN3VVpo0jAnK1XLD+yo8F8L3QTsuh7tvpNNkxsaBlmFpxwG2Cvy5uIdX+TThjTn6fIQmf5/wIoBG3pX0NSJWhNFzxfbaLJRYYk6XSpIa0sDMMZI5jqXRtgyF4A9dcaViAv6NIEmjfgCa8UevBcMdpLhGxCETDtamIa5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%203.png&quot;
+        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%203.png&quot;
+        src=&quot;/static/e69a2ad06155d5437d221da48321d2dc/c1b63/Untitled%203.png&quot;
+        srcset=&quot;/static/e69a2ad06155d5437d221da48321d2dc/5a46d/Untitled%203.png 300w,
+/static/e69a2ad06155d5437d221da48321d2dc/0a47e/Untitled%203.png 600w,
+/static/e69a2ad06155d5437d221da48321d2dc/c1b63/Untitled%203.png 1200w,
+/static/e69a2ad06155d5437d221da48321d2dc/17d12/Untitled%203.png 1666w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABhElEQVQoz31T2W7CQAzs//8XfeEQSAUq9QFyBwjZ7JE7YWpvmlS0gKVRsl7v2J71voEsTVMcj0e4rgvHcRAEAZIkged5OJ1OOJ/PuN1ueGW8z3jjhRApNpsNVqsVFosF5vO5XS+XS4vdbofr9YpMSmRKQdJ3Qpah7/uJ2BLu95/YfmxfpUfbtmiqCiURFkVhYfIcVV3bDoQQaJpmIFyv15jN3slR22xj+WMrGNulw2UcWRmiMEQSx6iJmCVi2SZCPlRT8DNdfjH4uVVBEkBJQCsYbaYCLCEza3IqaofL5wspy/IfKZsxBiFVx3Ga/tm01ui67p7Q/Gxy6RVpNQr9l5D9ZVlRnJhiHhLmeYGenHEUUSfyScsEIhGU9EIV0uI5Id+azGvEV4WvQCAr2ocXXtQdwkTCv0i4l9z6lHpYIY1AVZMuBZTOCQYlJYnpJg+Hgx16Ho2cfBzDEFIPclHsHSG3wnrw8AZ+YEeChQ+DkIg8ekWOfUG+7w9+AsfwuHCScdTYvgEvh1EVYN5eGgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%204.png&quot;
+        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%204.png&quot;
+        src=&quot;/static/2022743cbaa31781b3163da97eb6a398/c1b63/Untitled%204.png&quot;
+        srcset=&quot;/static/2022743cbaa31781b3163da97eb6a398/5a46d/Untitled%204.png 300w,
+/static/2022743cbaa31781b3163da97eb6a398/0a47e/Untitled%204.png 600w,
+/static/2022743cbaa31781b3163da97eb6a398/c1b63/Untitled%204.png 1200w,
+/static/2022743cbaa31781b3163da97eb6a398/6a5c3/Untitled%204.png 1646w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;⇒ 복잡한 과정이지만 아무튼 요지&lt;/p&gt;
+&lt;p&gt;서로간의 대칭키를 안전하게 확보하면서 공개키 암호와 대칭키 암호의 각각의 장점만을 취함&lt;/p&gt;
+&lt;p&gt;SSL이 이렇게 튼튼하다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[200524 Spring Framework Tags: Java, Server :Java EE 개발을 위한 오픈소스 애플리케이션 프레임워크 cheese10yun/spring-guide 특징 경량 컨테이너로 자바 객체를 직접 관리 POJO…]]></description><link>https://junbyeol.github.io/spring/200310-Spring-Framework/</link><guid isPermaLink="false">https://junbyeol.github.io/spring/200310-Spring-Framework/</guid><content:encoded>&lt;h1 id=&quot;200524-spring-framework&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#200524-spring-framework&quot; aria-label=&quot;200524 spring framework permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;200524 Spring Framework&lt;/h1&gt;
 &lt;p&gt;Tags: Java, Server&lt;/p&gt;
 &lt;p&gt;:Java EE 개발을 위한 오픈소스 애플리케이션 프레임워크&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/cheese10yun/spring-guide&quot;&gt;cheese10yun/spring-guide&lt;/a&gt;&lt;/p&gt;
@@ -801,160 +954,7 @@
 &lt;/ul&gt;
 &lt;p&gt;→ 143.248.35.11 = 01001111 11110100 00100011 00001011&lt;/p&gt;
 &lt;p&gt;→ 255.255.255.0 = 11111111 11111111 11111111 00000000 ← &lt;strong&gt;서브넷 마스크!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;⇒ 앞에 24비트가 네트워크 영역이라는 뜻!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[200525 TLS/SSL Tags: Network…]]></description><link>https://junbyeol.github.io/network/200525 TLS SSL 376350998350494eb1b0c6e2fca91508/</link><guid isPermaLink="false">https://junbyeol.github.io/network/200525 TLS SSL 376350998350494eb1b0c6e2fca91508/</guid><content:encoded>&lt;h1 id=&quot;200525-tlsssl&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#200525-tlsssl&quot; aria-label=&quot;200525 tlsssl permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;200525 TLS/SSL&lt;/h1&gt;
-&lt;p&gt;Tags: Network&lt;/p&gt;
-&lt;h1 id=&quot;암호화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%95%94%ED%98%B8%ED%99%94&quot; aria-label=&quot;암호화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;암호화&lt;/h1&gt;
-&lt;h2 id=&quot;대칭키-암호&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8C%80%EC%B9%AD%ED%82%A4-%EC%95%94%ED%98%B8&quot; aria-label=&quot;대칭키 암호 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;대칭키 암호&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;암호화키와 복호화키가 동일&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;공개키-암호비대칭키-암호&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%9C%ED%82%A4-%EC%95%94%ED%98%B8%EB%B9%84%EB%8C%80%EC%B9%AD%ED%82%A4-%EC%95%94%ED%98%B8&quot; aria-label=&quot;공개키 암호비대칭키 암호 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공개키 암호(비대칭키 암호)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;암호화키와 복호화키가 따로 있음&lt;/li&gt;
-&lt;li&gt;외부에 공개되는 키가 암호화/복호화 용인지에 따라&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;공개-키-암호&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%9C-%ED%82%A4-%EC%95%94%ED%98%B8&quot; aria-label=&quot;공개 키 암호 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공개 키 암호&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;공개키로 암호화, 비밀키로 복호화&lt;/li&gt;
-&lt;li&gt;비밀키를 갖고있는 사용자만 해독 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;→ 아무나 우체통에 편지를 넣을 수 있지만, 꺼내는 사람은 키를 가진 사람 한 명 뿐!&lt;/p&gt;
-&lt;h3 id=&quot;공개-키-서명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%EA%B0%9C-%ED%82%A4-%EC%84%9C%EB%AA%85&quot; aria-label=&quot;공개 키 서명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공개 키 서명&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;비밀키로 암호화, 공개키로 복호화&lt;/li&gt;
-&lt;li&gt;비밀키를 갖고있는 사용자만 암호화 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;→ 인장으로 편지봉투를 봉하면 누구나 열어볼수 있지만, 발신자가 무조건 본인임을 증명 가능&lt;/p&gt;
-&lt;h2 id=&quot;참고-해시&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0-%ED%95%B4%EC%8B%9C&quot; aria-label=&quot;참고 해시 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고) 해시&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;데이터를 특정길이의 다른 데이터로 전환하는 것!&lt;/li&gt;
-&lt;li&gt;복호화할 수 없으므로 엄밀하게 암호화는 아니다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;tlsssl&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tlsssl&quot; aria-label=&quot;tlsssl permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TLS/SSL&lt;/h1&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 560px;&quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 63.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACxklEQVQ4y22TC08aQRSF+cdN6gs11WotasHWBwsLCAhCRKGKtuCCBHl0QXk/bEWrlmJitEYTE2BB0NOZQYxJu8mXu3N25+y9c+/KHh8f8b+r3W7B5smDc+Wg28iDX88R8gy6foasOWcGWlcWB6VfkNHNl5eXODw8RLlcZjw8PKDRaGBpfQcOIQy904/1QBQ6pw9OXxhmdxAGVwAuf4hofnhjGQjxDIKRWMeQGpydnaFYLKJWq7EMJakJYTeAg6MEiT4cnabgDQrIFKKIJiLwBH0o/hCxvetH6TSH0995REVi2G63Qbm/v2dZUXO6luo1TJji6OfTGNAmMKRPkZjEsCGDIYJcl8IbYxb9ROvT7EPOJxCK5yFrtVrMqGtYrVaZaa1WxTg1NKQxbCIGi2n068hmfo8hX0yhV7vP4qAxDTl5L7RX7JTcvaghLb1UKuHk5wkmrR6otgSo3F5MuzwYtbgx5drCiNkOxaob43Yv5oUQ5rYDUG2KCESykFUqFZyfn+Pi4gJXV1fsDOtSnZRch8ISxshyBGO2CEatYfSovZDrtzGoF0ipX9HLCXi3IhK+kedx7MYKkNESKZIk4ebmBnd3d4zrP9eYskcxvZkmWVIyUJL7CUcU71dFfHCnMPMl8xzH7MRQzP9bMjWnGVfKFXxyhWHcK8AUy8NEDnxRzGJma4ehCyeJViBaDpZkEUp3rFMybUCz2QRtDr2nkUK7/NYg4tVCHL2aOHq4DgO02/pOQ14/aTT2kXW42xQ62LQZdKhvb29ZtnWpASX/GWreAk5vIyxDrbNiekYDhVKNee0SOIONaMvQGqyYVK8hSM+QbqYZ0qE+Pj5mM8jKb7YwpVkDx5ug0VsIxEBnhmpWA+UnjnzI9KQtgTeYoVhwYCdKzrD7L9M5pKW+/JeNG0l8tO9j3pHE3EqCsbCaYsy90Gaf9Nz3E/wFG9tZGiCeU7AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled.png&quot;
-        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled.png&quot;
-        src=&quot;/static/7a79541254f7de53ea2b8da28ff72ebd/b06ae/Untitled.png&quot;
-        srcset=&quot;/static/7a79541254f7de53ea2b8da28ff72ebd/5a46d/Untitled.png 300w,
-/static/7a79541254f7de53ea2b8da28ff72ebd/b06ae/Untitled.png 560w&quot;
-        sizes=&quot;(max-width: 560px) 100vw, 560px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TCP/IP 계층에서 Application Layer에 속함&lt;/li&gt;
-&lt;li&gt;TLS 1.0 == SSL 3.0, 같은 말이라는 뜻&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;악수(HandShake) ⇒ 전송(Session) ⇒ 통신종료&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;이중 HandShake가 너무너무너무너무 중요함&lt;/p&gt;
-&lt;h2 id=&quot;ssl-handshake&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ssl-handshake&quot; aria-label=&quot;ssl handshake permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSL Handshake&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;데이터 전송(Session) 때 사용할 대칭 키를 서로 안전하게 확보하는 것이 목표!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;사진출처) 내가 만듦&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 54.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABfklEQVQoz51S226CQBTk/3/G9Bd8kapt4oNpmoCArIDITS6CIEx3UGyCJE16yGTZ25w5s0cJggCqqvZYLpeYz+fYbrfYbDZYr9dYrVbwfR+32w3X6xV1Xb+gbVswuq6DUlUVPM+DaZqwLAuGYUDTtB5c03UdYRgiSRLEcTwJkg6hOI6D2ewNeZ7jvyGEgOu6yLIMCrMvFou+JJKez2fkcmMIlvFXUBTvkkNh/ZTMieu5sB0B4R6QFwWK4oLLReIxUkGaZn1SguWWZSnPFc/EStM0yOQhLmiWjvX2E1/GN0zpJz2ll7vdrveSPlLJ8Bh8JApK07QX9Ev4KDGULy5sgZN/6j3Z7/eS2IRt27CFDXYEX3xswwshs/IQFzv5MSvn44tde19jZ9A3JrqrLsaEhZRfS0+Spz/n5D5GcYSD70BIOL6LKIyk0hBH79i3G/3Lsny65KkoqxLqxzsMYeJwdBCc7mUT7BAS8f6TkOWRdGiRMbifSwVNPX2GwfvD/w86M0yjvEiFdgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%201.png&quot;
-        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%201.png&quot;
-        src=&quot;/static/1651999551a13a2d36e2a87dcde508e1/c1b63/Untitled%201.png&quot;
-        srcset=&quot;/static/1651999551a13a2d36e2a87dcde508e1/5a46d/Untitled%201.png 300w,
-/static/1651999551a13a2d36e2a87dcde508e1/0a47e/Untitled%201.png 600w,
-/static/1651999551a13a2d36e2a87dcde508e1/c1b63/Untitled%201.png 1200w,
-/static/1651999551a13a2d36e2a87dcde508e1/fde66/Untitled%201.png 1574w&quot;
-        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABiUlEQVQoz5VSa2vCQBD0//8i+8lCoWBLi4qirajVJBrzfl2SS0ymtxuTKrZCD4bsHbuzs7PpaZqGxWKB8XiMyWSC0WiE6XSK5XLJ9/l8jtlsht1uB13XQfkt2vt2u2VQTg/qOI6D4XB4BSJuYyJP0/RXZFmGy8OEpmkyTqcTqqpi5HnexWVZcuFf8H2fyameCQeDR/T7D1xc1zX+cyh/vV7zlEVRNIQ/impIKRl0J8icYtm9U5EQAofDHntDQyoSxElyPXIhCyTqUYgUURRxQUvY+kRvIhGcF0YxDpaH8acBO0gUqeimawjPXXkEBU958qEWsVKjmJbFm7Rtm8eihp7n42BaWO4spLJSTeLOqhtCMtb92mD1+oLV+xu05yfomw3y87i0IPoS6qrkmii6Q8gJQQBfqfFdF+7xqBS5qO4s64awLIvGB6VOypzReJgpZeflKIWk/qga6JrOP7FhGOxvHF8QyrJCJkskqYQXJnC8EK4fXcP12D9XKQ7DsEEQIlCTUCOyoSX8Bh/XSdk+1Rn+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%202.png&quot;
-        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%202.png&quot;
-        src=&quot;/static/dc216d05f4b7eef730cd5a13f2225a49/c1b63/Untitled%202.png&quot;
-        srcset=&quot;/static/dc216d05f4b7eef730cd5a13f2225a49/5a46d/Untitled%202.png 300w,
-/static/dc216d05f4b7eef730cd5a13f2225a49/0a47e/Untitled%202.png 600w,
-/static/dc216d05f4b7eef730cd5a13f2225a49/c1b63/Untitled%202.png 1200w,
-/static/dc216d05f4b7eef730cd5a13f2225a49/6568d/Untitled%202.png 1660w&quot;
-        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 54.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABlUlEQVQoz4VSa2+CQBD0//+t9gNqrZGmsamNTeXlIeBxHAgITnfX2mircckGuMfszuwMQKG1RhAEkp7nQa3X2G638r/ZbJCmKQ6HA24F751ywAtKKUynU4xGI4zHY4woXdfF5OkJk8kE8/kcWZZJ4Wt5XkwAF4sPSY48z5GEHhIqEsexdFiWJbquQ9u2V5PPWGvR9/0RcOgM8fDwiKZphF6kPMQqks6jKJI1BrwVq9UKSZJgt9sdAau6wSIqEG8STJ+f4b68wn37hOM4Qtn3fTl80utcN46isJeUy7KCsRU6anm5XIpmDOoMHcxmM4RhKKApdcHB1C4Bi18GAsjVW6Jbdw10Y5DXBpnJUOxLmNZiHSt4foCQNGVQHtBdwLquj1R+ntN3VVpo0jAnK1XLD+yo8F8L3QTsuh7tvpNNkxsaBlmFpxwG2Cvy5uIdX+TThjTn6fIQmf5/wIoBG3pX0NSJWhNFzxfbaLJRYYk6XSpIa0sDMMZI5jqXRtgyF4A9dcaViAv6NIEmjfgCa8UevBcMdpLhGxCETDtamIa5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%203.png&quot;
-        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%203.png&quot;
-        src=&quot;/static/e69a2ad06155d5437d221da48321d2dc/c1b63/Untitled%203.png&quot;
-        srcset=&quot;/static/e69a2ad06155d5437d221da48321d2dc/5a46d/Untitled%203.png 300w,
-/static/e69a2ad06155d5437d221da48321d2dc/0a47e/Untitled%203.png 600w,
-/static/e69a2ad06155d5437d221da48321d2dc/c1b63/Untitled%203.png 1200w,
-/static/e69a2ad06155d5437d221da48321d2dc/17d12/Untitled%203.png 1666w&quot;
-        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABhElEQVQoz31T2W7CQAzs//8XfeEQSAUq9QFyBwjZ7JE7YWpvmlS0gKVRsl7v2J71voEsTVMcj0e4rgvHcRAEAZIkged5OJ1OOJ/PuN1ueGW8z3jjhRApNpsNVqsVFosF5vO5XS+XS4vdbofr9YpMSmRKQdJ3Qpah7/uJ2BLu95/YfmxfpUfbtmiqCiURFkVhYfIcVV3bDoQQaJpmIFyv15jN3slR22xj+WMrGNulw2UcWRmiMEQSx6iJmCVi2SZCPlRT8DNdfjH4uVVBEkBJQCsYbaYCLCEza3IqaofL5wspy/IfKZsxBiFVx3Ga/tm01ui67p7Q/Gxy6RVpNQr9l5D9ZVlRnJhiHhLmeYGenHEUUSfyScsEIhGU9EIV0uI5Id+azGvEV4WvQCAr2ocXXtQdwkTCv0i4l9z6lHpYIY1AVZMuBZTOCQYlJYnpJg+Hgx16Ho2cfBzDEFIPclHsHSG3wnrw8AZ+YEeChQ+DkIg8ekWOfUG+7w9+AsfwuHCScdTYvgEvh1EVYN5eGgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%204.png&quot;
-        title=&quot;200525%20TLS%20SSL%20376350998350494eb1b0c6e2fca91508/Untitled%204.png&quot;
-        src=&quot;/static/2022743cbaa31781b3163da97eb6a398/c1b63/Untitled%204.png&quot;
-        srcset=&quot;/static/2022743cbaa31781b3163da97eb6a398/5a46d/Untitled%204.png 300w,
-/static/2022743cbaa31781b3163da97eb6a398/0a47e/Untitled%204.png 600w,
-/static/2022743cbaa31781b3163da97eb6a398/c1b63/Untitled%204.png 1200w,
-/static/2022743cbaa31781b3163da97eb6a398/6a5c3/Untitled%204.png 1646w&quot;
-        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;⇒ 복잡한 과정이지만 아무튼 요지&lt;/p&gt;
-&lt;p&gt;서로간의 대칭키를 안전하게 확보하면서 공개키 암호와 대칭키 암호의 각각의 장점만을 취함&lt;/p&gt;
-&lt;p&gt;SSL이 이렇게 튼튼하다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Javascript 표준]]></title><description><![CDATA[이 글은 윤준성의 개발꼬맹이 시절, 혼자 노션에 공부하며 정리해둔 것 중 괜찮은 것을 추려올린 글입니다.
+&lt;p&gt;⇒ 앞에 24비트가 네트워크 영역이라는 뜻!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Javascript 표준]]></title><description><![CDATA[이 글은 윤준성의 개발꼬맹이 시절, 혼자 노션에 공부하며 정리해둔 것 중 괜찮은 것을 추려올린 글입니다.
 기술블로그 글 기고 목적으로 작성되지 않아, 가독성이 좋지 않거나 알 수 없는 워딩이 있을 수 있습니다. https://wormwlrm…]]></description><link>https://junbyeol.github.io/web/201217-Javascript-표준/</link><guid isPermaLink="false">https://junbyeol.github.io/web/201217-Javascript-표준/</guid><pubDate>Thu, 17 Dec 2020 12:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글은 윤준성의 개발꼬맹이 시절, 혼자 노션에 공부하며 정리해둔 것 중 괜찮은 것을 추려올린 글입니다.
 기술블로그 글 기고 목적으로 작성되지 않아, 가독성이 좋지 않거나 알 수 없는 워딩이 있을 수 있습니다.&lt;/p&gt;
@@ -2731,7 +2731,104 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 	&lt;span class=&quot;token keyword&quot;&gt;assert&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getWidth&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getHeight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printError&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;⇒ rectangle에 Rectangle()과 Square()을 넣었을 때의 결과가 달라진다&lt;/p&gt;
-&lt;p&gt;⇒ Rectangle 객체에서 작동하는 것이 Square에서 작동하지 않으므로 LSP 위반&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Kubernetes]]></title><description><![CDATA[…]]></description><link>https://junbyeol.github.io/infra/201008-Kubernetes/</link><guid isPermaLink="false">https://junbyeol.github.io/infra/201008-Kubernetes/</guid><pubDate>Fri, 07 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;⇒ Rectangle 객체에서 작동하는 것이 Square에서 작동하지 않으므로 LSP 위반&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Docker]]></title><description><![CDATA[…]]></description><link>https://junbyeol.github.io/infra/200716-Docker/</link><guid isPermaLink="false">https://junbyeol.github.io/infra/200716-Docker/</guid><pubDate>Fri, 07 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;이 글은 윤준성의 개발꼬맹이 시절, 혼자 노션에 공부하며 정리해둔 것 중 괜찮은 것을 추려올린 글입니다.
+기술블로그 글 기고 목적으로 작성되지 않아, 가독성이 좋지 않거나 알 수 없는 워딩이 있을 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;: 컨테이너 기반의 오픈소스 가상화 플랫폼&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html#%EC%A0%95%EB%A6%AC&quot;&gt;초보를 위한 도커 안내서 - 도커란 무엇인가?&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;가상화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%80%EC%83%81%ED%99%94&quot; aria-label=&quot;가상화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;가상화&lt;/h3&gt;
+&lt;p&gt;: Hypervisor를 이용, 하나의 물리적 머신에 다수의 가상 머신을 만드는 기술&lt;/p&gt;
+&lt;h1 id=&quot;컨테이너&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88&quot; aria-label=&quot;컨테이너 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;컨테이너&lt;/h1&gt;
+&lt;p&gt;: 가상화 기술의 하나로써, 격리된 공간에서 프로세스가 동작하는 기술&lt;/p&gt;
+&lt;h3 id=&quot;탄생-배경&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD&quot; aria-label=&quot;탄생 배경 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;탄생 배경&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAC00lEQVQoz3WSaU8TURSG+7/85gej0WCUqERUNBqVGDSicQFxF3cRMUrELSogrlVQoyKo0HYo0BakQDfojFPaMqUFSm2hy+MtdcEPnuRN5tx7z3Pee+bqEJHJZEgLZSMxO4vb4yGVTs/nmV8Sh+bPZSMt9hRFwev1Eo/H+c3Ihu73x58Q+ZjPB6lkDpVJ52ALirJAVVWRZZlEIvEvMHvYKjbah4cxuFy0OZz4gh4i2pAA2wkGBolF5D8OMwuc/vXwd12XXWix27krSTyxWKg1SFjdvSgTDno9NhzjDiYnR3JO/xML8bpUNIqpu5tWk4nPXRLvDUYc/SZG7SaG+0y4Bs2E3VbSsRmmxXwjsdi8psXs5uJTpOMRmJ0i9WOCdDKObi4YxO2VGZAVhsSgBxSV4LiPyUgATfMRCgf4Ma4w4/fxUDSul7po7O7hXsdXUdeD+7sF66CB0e9mZiZlAQxpDKs++sb8DPj9WD2jYnYjhEMKQQHToiESUwFigTFe2qzoLT3orRaeSQZktQ+v5sKhDqIE7cSn1RzQ7vJgGnJgFuo2SrikThSbJJ6GE1lxEVY9zIib1Pc5abI5edrvotFix+zsp/ObmdZeI59tRnEbvwBqGp/aO3j4opmmV295/ekrLSLXf2jjsb6FB8/0dElmouMhSr5oFL5V2dMe4FBHgNI2lbIOPztbx1jbrNDqjaJLhifQP2qg5nI1N67W0HDnPvqGJu7X3ubm1etUX6qi7VUzMdF459GzFO4to2h/Bfsqqyi/coPiiko2iXx18T4+dkq5Z1N+spIlq9aSV7CJdVu2U1RcwuoNW1i5vojFefnU1NYxN5ckf/M2luQXsHTNetZt3UHhjl0sL9jICqFFy/J4/e59Dlj3qJHSY6c4ePocJ4XTGuGy4vxlDp85z54jJ3j+5h3JVIrjF6s4IJpnde7aTapv3eWwqCk7c4HdZccwir//EwWPL522o6hhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;200716%20Docker%20624974caa13940a79420267d34712318/Untitled.png&quot;
+        title=&quot;200716%20Docker%20624974caa13940a79420267d34712318/Untitled.png&quot;
+        src=&quot;/static/02b42c622f5f4cea6104bf2e89152e8f/c1b63/200716-1.png&quot;
+        srcset=&quot;/static/02b42c622f5f4cea6104bf2e89152e8f/5a46d/200716-1.png 300w,
+/static/02b42c622f5f4cea6104bf2e89152e8f/0a47e/200716-1.png 600w,
+/static/02b42c622f5f4cea6104bf2e89152e8f/c1b63/200716-1.png 1200w,
+/static/02b42c622f5f4cea6104bf2e89152e8f/7a18f/200716-1.png 1284w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;VMware, VirtualBox&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS를 가상화&lt;/li&gt;
+&lt;li&gt;호스트 OS 위에 게스트 OS를 구동시킴&lt;/li&gt;
+&lt;li&gt;간단하지만 오버헤드 심함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KVM(Kernel-based Virtual Machine)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU를 가상화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Xen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;반가상화(Paravirtualization)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;→ 하지만 근본적으로 모두 추가적인 OS 설치가 필요! 성능문제 여전&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;→ 프로세스를 격리하자!&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;이미지image&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%AF%B8%EC%A7%80image&quot; aria-label=&quot;이미지image permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이미지(image)&lt;/h1&gt;
+&lt;p&gt;: 컨테이너 실행에 필요한 파일과 설정값 등을 포함하고 있는 밑그림&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;컨테이너를 실행하기 위한 모오오오오든 것을 가지고 있어 의존성 관리가 매우 편리하다!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dockerfile-작성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dockerfile-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;dockerfile 작성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DockerFile 작성하기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Dockerfile은 image를 생성하기 위한 일련의 instruction 집합!&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub에 Dockerfile을 올려두면&lt;/p&gt;
+&lt;p&gt;→ 다른 개발자들은 그걸 받아 이미지로 뜨고&lt;/p&gt;
+&lt;p&gt;→ 컨테이너를 만들기만 하면 모든 개발자가 같은 세팅에서 작업 가능!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#baseImage는 가벼울수록 좋다!&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#ubuntu를 사용하면 유사시에 컨테이너에 직접 접근해서 컨트롤하기가 용이&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#무거운 ubuntu대신 alpine 등 경량화된 이미지용 OS(?)도 있다.&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; ubuntu:xenial-20191024 &lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;LABEL&lt;/span&gt; maintainer=&lt;span class=&quot;token string&quot;&gt;&quot;web@devsisters.com&quot;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; apt-get -yqq update&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; apt-get install -y --no-install-recommends curl ca-certificates build-essential&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#nodejs의 버전관리&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; curl -SL https://deb.nodesource.com/setup_12.x | bash - &amp;amp;&amp;amp;&lt;span class=&quot;token operator&quot;&gt;\&lt;/span&gt;
+  apt-get -yqq update &amp;amp;&amp;amp;&lt;span class=&quot;token operator&quot;&gt;\&lt;/span&gt;
+  apt-get install -y nodejs &amp;amp;&amp;amp;&lt;span class=&quot;token operator&quot;&gt;\&lt;/span&gt;
+  rm -rf /var/lib/apt/lists/*&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# 마지막 과정은 apt-get이 만드는 메타데이터들을 삭제하여 이미지의 크기를 줄인다&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; package*.json ./&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm install --production --silent&lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; . .&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#위의 package*.json 을 COPY하는 과정은 이 과정에서도 한번 더 일어나는데?&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#cache에 관한 문제를 해결하기 위함 &lt;/span&gt;
+
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CMD&lt;/span&gt; npm start&lt;/span&gt;
+&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;EXPOSE&lt;/span&gt; 8000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/heowc/programming-study/issues/90&quot;&gt;[docker] 헷갈리는 Dockerfile 명령어 · Issue #90 · heowc/programming-study&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Kubernetes]]></title><description><![CDATA[…]]></description><link>https://junbyeol.github.io/infra/201008-Kubernetes/</link><guid isPermaLink="false">https://junbyeol.github.io/infra/201008-Kubernetes/</guid><pubDate>Fri, 07 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글은 윤준성의 개발꼬맹이 시절, 혼자 노션에 공부하며 정리해둔 것 중 괜찮은 것을 추려올린 글입니다.
 기술블로그 글 기고 목적으로 작성되지 않아, 가독성이 좋지 않거나 알 수 없는 워딩이 있을 수 있습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2959,104 +3056,7 @@ data:
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;kubectl apply -f ./secret.yaml&lt;/code&gt; 로 시크릿을 생성할 수 있다. 하지만, 이 방법은 base64로 인코딩 하는 과정을 거치는 방법이다. base64로 인코딩되지 않은 문자열을 시크릿에 직접 넣을 수도 있다. 애플리케이션이 다음 구성 파일을 사용할 때,&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;apiUrl: &lt;span class=&quot;token string&quot;&gt;&quot;https://my.api.com/api/v1&quot;&lt;/span&gt;
 username: &lt;span class=&quot;token string&quot;&gt;&quot;user&quot;&lt;/span&gt;
-password: &lt;span class=&quot;token string&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Docker]]></title><description><![CDATA[…]]></description><link>https://junbyeol.github.io/infra/200716-Docker/</link><guid isPermaLink="false">https://junbyeol.github.io/infra/200716-Docker/</guid><pubDate>Fri, 07 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
-&lt;p&gt;이 글은 윤준성의 개발꼬맹이 시절, 혼자 노션에 공부하며 정리해둔 것 중 괜찮은 것을 추려올린 글입니다.
-기술블로그 글 기고 목적으로 작성되지 않아, 가독성이 좋지 않거나 알 수 없는 워딩이 있을 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;: 컨테이너 기반의 오픈소스 가상화 플랫폼&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html#%EC%A0%95%EB%A6%AC&quot;&gt;초보를 위한 도커 안내서 - 도커란 무엇인가?&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;가상화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%80%EC%83%81%ED%99%94&quot; aria-label=&quot;가상화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;가상화&lt;/h3&gt;
-&lt;p&gt;: Hypervisor를 이용, 하나의 물리적 머신에 다수의 가상 머신을 만드는 기술&lt;/p&gt;
-&lt;h1 id=&quot;컨테이너&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88&quot; aria-label=&quot;컨테이너 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;컨테이너&lt;/h1&gt;
-&lt;p&gt;: 가상화 기술의 하나로써, 격리된 공간에서 프로세스가 동작하는 기술&lt;/p&gt;
-&lt;h3 id=&quot;탄생-배경&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD&quot; aria-label=&quot;탄생 배경 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;탄생 배경&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 61.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAC00lEQVQoz3WSaU8TURSG+7/85gej0WCUqERUNBqVGDSicQFxF3cRMUrELSogrlVQoyKo0HYo0BakQDfojFPaMqUFSm2hy+MtdcEPnuRN5tx7z3Pee+bqEJHJZEgLZSMxO4vb4yGVTs/nmV8Sh+bPZSMt9hRFwev1Eo/H+c3Ihu73x58Q+ZjPB6lkDpVJ52ALirJAVVWRZZlEIvEvMHvYKjbah4cxuFy0OZz4gh4i2pAA2wkGBolF5D8OMwuc/vXwd12XXWix27krSTyxWKg1SFjdvSgTDno9NhzjDiYnR3JO/xML8bpUNIqpu5tWk4nPXRLvDUYc/SZG7SaG+0y4Bs2E3VbSsRmmxXwjsdi8psXs5uJTpOMRmJ0i9WOCdDKObi4YxO2VGZAVhsSgBxSV4LiPyUgATfMRCgf4Ma4w4/fxUDSul7po7O7hXsdXUdeD+7sF66CB0e9mZiZlAQxpDKs++sb8DPj9WD2jYnYjhEMKQQHToiESUwFigTFe2qzoLT3orRaeSQZktQ+v5sKhDqIE7cSn1RzQ7vJgGnJgFuo2SrikThSbJJ6GE1lxEVY9zIib1Pc5abI5edrvotFix+zsp/ObmdZeI59tRnEbvwBqGp/aO3j4opmmV295/ekrLSLXf2jjsb6FB8/0dElmouMhSr5oFL5V2dMe4FBHgNI2lbIOPztbx1jbrNDqjaJLhifQP2qg5nI1N67W0HDnPvqGJu7X3ubm1etUX6qi7VUzMdF459GzFO4to2h/Bfsqqyi/coPiiko2iXx18T4+dkq5Z1N+spIlq9aSV7CJdVu2U1RcwuoNW1i5vojFefnU1NYxN5ckf/M2luQXsHTNetZt3UHhjl0sL9jICqFFy/J4/e59Dlj3qJHSY6c4ePocJ4XTGuGy4vxlDp85z54jJ3j+5h3JVIrjF6s4IJpnde7aTapv3eWwqCk7c4HdZccwir//EwWPL522o6hhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;200716%20Docker%20624974caa13940a79420267d34712318/Untitled.png&quot;
-        title=&quot;200716%20Docker%20624974caa13940a79420267d34712318/Untitled.png&quot;
-        src=&quot;/static/02b42c622f5f4cea6104bf2e89152e8f/c1b63/200716-1.png&quot;
-        srcset=&quot;/static/02b42c622f5f4cea6104bf2e89152e8f/5a46d/200716-1.png 300w,
-/static/02b42c622f5f4cea6104bf2e89152e8f/0a47e/200716-1.png 600w,
-/static/02b42c622f5f4cea6104bf2e89152e8f/c1b63/200716-1.png 1200w,
-/static/02b42c622f5f4cea6104bf2e89152e8f/7a18f/200716-1.png 1284w&quot;
-        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;VMware, VirtualBox&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;OS를 가상화&lt;/li&gt;
-&lt;li&gt;호스트 OS 위에 게스트 OS를 구동시킴&lt;/li&gt;
-&lt;li&gt;간단하지만 오버헤드 심함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;KVM(Kernel-based Virtual Machine)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;CPU를 가상화&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Xen&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;반가상화(Paravirtualization)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;→ 하지만 근본적으로 모두 추가적인 OS 설치가 필요! 성능문제 여전&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;→ 프로세스를 격리하자!&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&quot;이미지image&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%AF%B8%EC%A7%80image&quot; aria-label=&quot;이미지image permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이미지(image)&lt;/h1&gt;
-&lt;p&gt;: 컨테이너 실행에 필요한 파일과 설정값 등을 포함하고 있는 밑그림&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;컨테이너를 실행하기 위한 모오오오오든 것을 가지고 있어 의존성 관리가 매우 편리하다!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;dockerfile-작성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dockerfile-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;dockerfile 작성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DockerFile 작성하기&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Dockerfile은 image를 생성하기 위한 일련의 instruction 집합!&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;GitHub에 Dockerfile을 올려두면&lt;/p&gt;
-&lt;p&gt;→ 다른 개발자들은 그걸 받아 이미지로 뜨고&lt;/p&gt;
-&lt;p&gt;→ 컨테이너를 만들기만 하면 모든 개발자가 같은 세팅에서 작업 가능!&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#baseImage는 가벼울수록 좋다!&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#ubuntu를 사용하면 유사시에 컨테이너에 직접 접근해서 컨트롤하기가 용이&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#무거운 ubuntu대신 alpine 등 경량화된 이미지용 OS(?)도 있다.&lt;/span&gt;
-
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; ubuntu:xenial-20191024 &lt;/span&gt;
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;LABEL&lt;/span&gt; maintainer=&lt;span class=&quot;token string&quot;&gt;&quot;web@devsisters.com&quot;&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; apt-get -yqq update&lt;/span&gt;
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; apt-get install -y --no-install-recommends curl ca-certificates build-essential&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;#nodejs의 버전관리&lt;/span&gt;
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; curl -SL https://deb.nodesource.com/setup_12.x | bash - &amp;amp;&amp;amp;&lt;span class=&quot;token operator&quot;&gt;\&lt;/span&gt;
-  apt-get -yqq update &amp;amp;&amp;amp;&lt;span class=&quot;token operator&quot;&gt;\&lt;/span&gt;
-  apt-get install -y nodejs &amp;amp;&amp;amp;&lt;span class=&quot;token operator&quot;&gt;\&lt;/span&gt;
-  rm -rf /var/lib/apt/lists/*&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# 마지막 과정은 apt-get이 만드는 메타데이터들을 삭제하여 이미지의 크기를 줄인다&lt;/span&gt;
-
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; package*.json ./&lt;/span&gt;
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;RUN&lt;/span&gt; npm install --production --silent&lt;/span&gt;
-
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;COPY&lt;/span&gt; . .&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#위의 package*.json 을 COPY하는 과정은 이 과정에서도 한번 더 일어나는데?&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#cache에 관한 문제를 해결하기 위함 &lt;/span&gt;
-
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CMD&lt;/span&gt; npm start&lt;/span&gt;
-&lt;span class=&quot;token instruction&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;EXPOSE&lt;/span&gt; 8000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/heowc/programming-study/issues/90&quot;&gt;[docker] 헷갈리는 Dockerfile 명령어 · Issue #90 · heowc/programming-study&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[본 이력서는 이 링크에서 더 잘 읽힙니다. 윤준성 | Junsung Yoon Node.js 기반의 백엔드 개발에 능숙하며 프론트, DevOps 업무 경험이 있습니다. 데브시스터즈에서…]]></description><link>https://junbyeol.github.io/resume-ko/</link><guid isPermaLink="false">https://junbyeol.github.io/resume-ko/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+password: &lt;span class=&quot;token string&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[본 이력서는 이 링크에서 더 잘 읽힙니다. 윤준성 | Junsung Yoon Node.js 기반의 백엔드 개발에 능숙하며 프론트, DevOps 업무 경험이 있습니다. 데브시스터즈에서…]]></description><link>https://junbyeol.github.io/resume-ko/</link><guid isPermaLink="false">https://junbyeol.github.io/resume-ko/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;본 이력서는 &lt;a href=&quot;https://www.notion.so/Junsung-Yoon-fb07f70750b447818af8236ddfc8cfb9&quot;&gt;이 링크&lt;/a&gt;에서 더 잘 읽힙니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;윤준성--junsung-yoon&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9C%A4%EC%A4%80%EC%84%B1--junsung-yoon&quot; aria-label=&quot;윤준성  junsung yoon permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;윤준성 | Junsung Yoon&lt;/h1&gt;
